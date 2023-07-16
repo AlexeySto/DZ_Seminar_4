@@ -9,7 +9,7 @@ int GetNumber(string mes)              //Ввод числа пользоват�
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int GetSumReg(int num)
+int GetSumReg(int num)                // Находит сумму всех цифр числа
 {
     int sumReg = 0;
     for(int temp = num; temp != 0; temp /= 10) sumReg += temp % 10;
